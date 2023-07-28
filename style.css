@@ -1,0 +1,277 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 4vh;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    background: #0b0b0b;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sidebar{
+    position: absolute;
+    width: 60px;
+    background-color: white;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.sidebar:hover{
+    width: 300px;
+}
+
+
+.sidebar ul{
+    position: relative;
+    height: 100vh;
+}
+
+.sidebar ul li{
+    transition: 200ms;
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    transform: scale(1.1);
+    background-color: #f3f3f3;
+}
+
+.sidebar ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+}
+
+.sidebar ul li a .icon{
+    
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+}
+
+.sidebar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #333;
+    letter-spacing: 0.01px;
+}
+
+.sidebar ul .logo{
+    font-size: 2em;
+    padding-bottom: 50px;
+}
+
+.sidebar ul .logo .text{
+    font-size: 4vh;
+}
+
+.navbar{
+    height: 10vh;
+    background-color: rgba(0,0,0,.85);
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a{
+    padding: 10px 12px;
+    color: white;
+}
+
+
+.main-banner{
+    height: 85vh;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.banner{
+    font-family: "Helvetica Now Display Bold";
+    color: white;
+    text-align: right;
+    display: block;
+    padding-top: 25vh;
+    padding-right: 10vh;
+    height: 80vh;
+    background: linear-gradient(to right, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://videos-rockstargames-com.akamaized.net/screencaps/12290/_global/1920.jpg);
+    background-size: cover;
+}
+
+.banner a{
+    padding: 1rem 4rem;
+    color: white;
+    border: 2px solid white;
+    transition: 300ms;
+}
+
+.banner a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.explore1{
+    height: 100vh;
+    background:url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/gta-v/9ca23774eb886a9dce533874723e35ce7a825f5d.png);
+    background-size: cover;
+}
+
+
+.explore-banner,.banner2{
+    height: 100vh;
+    padding-top: 10px;
+}
+
+
+.banner2{
+    font-family: "Helvetica Now Display Bold";
+    color: white;
+    width: 100%;
+    text-align: left;
+    display: block;
+    font-size: 8vh;
+    padding-top: 25vh;
+    padding-left: 10vh;
+    height: 80vh;
+    background: linear-gradient(to left, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/3871/07edb091bb329145ee3f3f01476adb40acc6457b.jpg);
+    background-size: cover;
+}
+.explore-banner1{
+    font-family: "Helvetica Now Display Bold";
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 8vh;
+    padding-top: 25vh;
+    padding-left: 10vh;
+    height: 80vh;
+    background: linear-gradient(to left, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/tina-uploads/tina-modules/3871/07edb091bb329145ee3f3f01476adb40acc6457b.jpg);
+    background-size: cover;
+}
+
+.explore-banner1 a{
+    padding: 1rem 4rem;
+    color: white;
+    border: 2px solid white;
+    transition: 300ms;
+}
+
+.explore-banner1 a:hover{
+    background-color: white;
+    color: black;
+}
+
+.content-divider{
+    height: 2px;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.viewmore{
+    animation: float 2s ease-in-out infinite;
+    padding: 0.5rem 2rem;
+    color: white;
+    border: 2px solid white;
+    transition: 300ms;
+}
+
+.viewmore:hover{
+    background-color: white;
+    color: black;
+}
+
+.gallery-scroll{
+    animation: float 2s ease-in-out infinite;
+    padding: 0.5rem 2rem;
+    color: white;
+    transition: 300ms;
+}
+
+.gallery-scroll:hover{
+    transform: scale(1.2);
+}
+
+#gallery{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+    margin: 20vh
+}
+
+#gallery a p{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#gallery .card{
+    border:2px double white;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: pink;
+    height: 10em;
+    width: 11em;
+    transition: 300ms;
+}
+
+#gallery .game1{
+    background: linear-gradient(to bottom, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/V.jpg);
+    background-size: cover;
+}
+
+#gallery .game2{
+    background: linear-gradient(to bottom, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadredemption2.jpg);
+    background-size: cover;
+}
+
+#gallery .game3{
+    background: linear-gradient(to bottom, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/maxpayne3.jpg);
+    background-size: cover;
+}
+
+#gallery .card:hover{
+    transform: scale(1.1);
+}
