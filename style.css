@@ -233,28 +233,61 @@ body{
     display: flex;
     align-items: center;
     text-align: left;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 20vh
 }
 
 #gallery a p{
+
     color: rgb(255, 255, 255);
     font-weight: 300;
+    
     font-family: monospace;
     font-size: 20px;
 }
 
 #gallery .card{
-    border:2px double white;
     text-align: left;
-    overflow: hidden;
+    border: 1px solid black;
     display: flex;
     align-items: flex-end;
+    overflow: hidden;
     justify-content: center;
     background-color: pink;
     height: 10em;
     width: 11em;
+    transition: 800ms;
+    border-radius: 1em;
+}
+
+#gallery .top-card{
+    padding: 12px 25px;
+    border: 1px solid black;
+    border-radius: 1em;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(255,0,0,0),40%, rgb(42 46 53));
+    height: 15em;
+    transition: 600ms;
+}
+
+#gallery .top-card .text a{
+    display: block;
+    width: max-content;
+    background-color: rgb(49, 45, 68);
+    margin: 12px 0px;
+    padding: 0px 8px;
+    color: white;
     transition: 300ms;
+}
+#gallery .top-card .text a:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.08);
+}
+
+#gallery .top-card .text{
+    display: block;
+    padding: 20px;
 }
 
 #gallery .game1{
@@ -272,6 +305,6 @@ body{
     background-size: cover;
 }
 
-#gallery .card:hover{
+#gallery .top-card:hover{
     transform: scale(1.1);
 }
