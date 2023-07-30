@@ -19,10 +19,20 @@ body{
     background-repeat: no-repeat;
 }
 
+#preload{
+    background: #000 url(images/preload.gif) no-repeat  center center;
+    background-size: 30%;
+    height: 100vh;
+    width:100%;
+    position: absolute;
+    z-index: 100;
+    transition: 3s ease-in-out;
+}
+
 
 .sidebar{
     position: absolute;
-    width: 60px;
+    width: 45px;
     background-color: white;
     overflow: hidden;
     transition: 500ms;
@@ -56,15 +66,14 @@ body{
 }
 
 .sidebar ul li a .icon{
-    
     color: black;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 60px;
+    min-width: 45px;
     height: 60px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .sidebar ul li a .text{
@@ -73,7 +82,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #333;
     letter-spacing: 0.01px;
 }
@@ -107,7 +116,7 @@ body{
 .main-banner{
     height: 85vh;
     padding-top: 10px;
-    padding-left: 60px;
+    padding-left: 45px;
 }
 
 .banner{
@@ -228,7 +237,7 @@ body{
     transform: scale(1.2);
 }
 
-#gallery{
+.gallery{
     color: white;
     display: flex;
     align-items: center;
@@ -237,7 +246,7 @@ body{
     margin: 20vh
 }
 
-#gallery a p{
+.gallery a p{
 
     color: rgb(255, 255, 255);
     font-weight: 300;
@@ -246,7 +255,7 @@ body{
     font-size: 20px;
 }
 
-#gallery .card{
+.gallery .card{
     text-align: left;
     border: 1px solid black;
     display: flex;
@@ -260,7 +269,7 @@ body{
     border-radius: 1em;
 }
 
-#gallery .top-card{
+.gallery .top-card{
     padding: 12px 25px;
     border: 1px solid black;
     border-radius: 1em;
@@ -270,7 +279,7 @@ body{
     transition: 600ms;
 }
 
-#gallery .top-card .text a{
+.gallery .top-card .text a{
     display: block;
     width: max-content;
     background-color: rgb(49, 45, 68);
@@ -279,32 +288,32 @@ body{
     color: white;
     transition: 300ms;
 }
-#gallery .top-card .text a:hover{
+.gallery .top-card .text a:hover{
     color: black;
     background-color: white;
     transform: scale(1.08);
 }
 
-#gallery .top-card .text{
+.gallery .top-card .text{
     display: block;
     padding: 20px;
 }
 
-#gallery .game1{
+.gallery .game1{
     background: linear-gradient(to bottom, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/V.jpg);
     background-size: cover;
 }
 
-#gallery .game2{
+.gallery .game2{
     background: linear-gradient(to bottom, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/reddeadredemption2.jpg);
     background-size: cover;
 }
 
-#gallery .game3{
+.gallery .game3{
     background: linear-gradient(to bottom, rgba(255,0,0,0),40%, rgb(0, 0, 0)), url(https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/640/maxpayne3.jpg);
     background-size: cover;
 }
 
-#gallery .top-card:hover{
+.gallery .top-card:hover{
     transform: scale(1.1);
 }
